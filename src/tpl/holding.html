@@ -1,0 +1,22 @@
+<template id="holding">
+  <svg viewBox="0 0 340 340">
+    <circle cx="170" cy="170" r="170" stroke="#333" stroke-width="2" fill="#fff" />
+  </svg>
+</template>
+
+
+import c from '../config.js';
+
+const d = c.shape.holding.r * 2;
+
+export default `
+<circle class="bg" cx="0" cy="0" r="${c.shape.holding.r}" stroke="#333" stroke-width="2" fill="#fff"
+  style="transform: translate(50%, 50%)" />
+<g class="holding" width="${d}" height="${d}" viewBox="0 0 ${d} ${d}" x="${c.scene.w/2-c.shape.holding.r}"
+  y="${c.scene.h/2-c.shape.holding.r}">
+  <defs>
+    <style type="text/css">
+    </style>
+  </defs>
+</g>
+`;

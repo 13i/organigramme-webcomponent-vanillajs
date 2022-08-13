@@ -1,0 +1,7 @@
+{
+  "name": "@13i/hpb-organigramme",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve hCDK1rleQdjmxjZcs05l --open"
+  }
+}
